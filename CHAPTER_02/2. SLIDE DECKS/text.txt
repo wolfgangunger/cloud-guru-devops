@@ -1,0 +1,115 @@
+
+S1
+Hello Cloud Gurus,
+welcome to this chapter about CodeCommit.
+
+S2 In this chapter you will learn how to use AWS CodeCommit, everything about
+Repositories, Commits, Branches, Pull Requests and more
+
+S3
+So, first we start with a little introduction and definition of CodeCommit.
+Next some information on how to get GIT knowhow in case you don't have it yet.
+
+Then let's look a little closer on CodeCommit, its benefits and the main objects.
+
+S4
+Lets have a look on the AWS definition of CodeCommit:
+
+S5
+To describe it more precisely, let's also have a look on this definition
+
+On real important point to remember is, that CodeCommit is git based and 
+supports the standard functionality of Git.
+So if you have already some knowledge on Git, it will be easy for you to understand 
+how CodeCommit works.
+
+S6
+As mentioned with GIT know-how, CodeCommit is very easy to understand.
+Probably most of you aleady have experience on GIT and because of this reason 
+we won't cover a GIT tutorial in this course. 
+If you really have zero experience on GIT, getting some basic GIT knowHow in advance is really recommended.
+There is a really good GIT course on A Cloud Guru, this would be one option.
+Or take a look on these other resources where you could get some good infos and tutorials about GIT.
+
+S7
+Anyway here is a short overview on the most important GIT commands, in case you don't know them yet.
+
+S8
+With CodeCommit you can store and manage assets (such as documents, source code, and binary files) 
+in a private GIT based repository. 
+This means you can create Branches, Pull Request and all other GIT features.
+This diagramm shows a Master Branch with 2 unmerged Feature Branches 
+
+S9
+Lets talk about the CodeCommit benefits.
+Just to list some of them:
+CodeCommit is Git based, so 
+It supports the standard functionality of Git, so it works seamlessly with your existing Git-based tools.
+
+Of course CodeCommit offers a great AWS integration
+meaning a the integration with other AWS services, like CodeBuild, CodePipeline, CloudWatch and more
+
+Also to mention:
+Easy migration to Code Commit
+You can Easily migrate files from other remote repositories. 
+migrate to CodeCommit from any Git-based repository.
+
+S10
+A most GIT systems, CodeCommit supports HTTPS and SSH authentication.
+
+With HTTPS you can Login with a static user name and password. You can configure both in IAM
+
+With SSH you can Login with public and private key pairs. You can upload your public key in the IAM console
+
+S11
+Lets introduce the most important objects from CodeCommit, you should know all of these entities before we 
+get started on the HandsOn examples:
+
+A repository is the main version control object in CodeCommit, it's where you securely store code 
+and files for your project
+
+A file is a version-controlled, self-contained piece of information available to you 
+and other users of the repository. 
+
+Commits are snapshots of the contents and changes to the contents of your repository. 
+Every time a user commits and pushes a change, that information is saved and stored.
+
+You can use branches to separate work on a new or different version of files 
+without impacting work in other branches. You can use branches to develop new features and more.
+
+A pull request is the primary way you and other repository users can review, comment on, 
+and merge code changes from one branch to another.
+
+You can use a tag to mark a commit with a label that helps other repository users understand its importance.
+
+You can setup event triggers to push actions like SNS or Lambda functions
+
+and last but not least:
+Your user credentials to authenticate against CodeCommit. Can be HTTPS or SSH
+
+
+S12
+You are aleady watching the First lesson, an Introduction and chapter overview
+
+In the first HandsOn lession we Create our first CodeCommit Repo
+
+Then lets have a look on how to Browse files in Repo
+
+In a handsOn lesson lets see how to Integration with Eclipse and VisualStudio
+
+The next lesson will introduce Triggers and webhooks with handsOn examples
+
+Next we gonna have a look on Branches in CodeCommit
+
+And once you know how to create Branches, we going to cover Pull requests
+
+and finally a short Summary of the CodeCommit chapter
+
+
+
+
+
+
+
+
+ 

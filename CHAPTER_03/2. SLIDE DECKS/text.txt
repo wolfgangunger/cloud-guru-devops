@@ -1,0 +1,116 @@
+S1
+Hello CloudGurus
+welcome to this chapter about AWS CodeBuild.
+
+S2
+In this chapter we are goind to cover CodeBuild with a lot of handsOn examples.
+Java, Docker, Lambda and more
+
+S3
+Lets first have a short introduction to CodeCommit by its definition
+its intention and benefits.
+Followed by an overview on the most important objects of CodeCommit.
+We also going the see what kind of projects you can build with CodeCommit
+And finally the chapter overview.
+
+S4
+the official AWS definition of CodeCommit is :
+“AWS CodeBuild is a fully managed continuous integration service that compiles source code, 
+runs tests, and produces software packages that are ready to deploy. 
+With CodeBuild, you don’t need to provision, manage, and scale your own build servers..”
+
+S5
+Or to explain a little more detailed:
+AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles your source code, 
+runs unit tests, and produces artifacts that are ready to deploy. 
+It provides prepackaged build environments for the most popular programming languages and build tools 
+such as Apache Maven, Gradle, and more. 
+You can also customize build environments in CodeBuild to use your own build tools.
+
+S6
+Or to summarize it really short:
+CodeCommit 
+compiles your source code, runs unit tests, and produces artifacts that are ready to deploy. 
+The build can be maven, gradle, docker or others
+
+S7:
+Let talk about the benefits of CodeBuild. Some of these are
+it is fully managed
+CodeBuild eliminates the need to set up, patch, update, and manage your own build servers.
+
+It's on demand
+CodeBuild scales on demand to meet your build needs. You pay only for the number of build minutes you consume.
+So you don't pay 24/7 like for a Jenkins server .
+
+It's out of the box
+CodeBuild provides preconfigured build environments for the most popular programming languages. 
+All you need to do is point to your build script to start your first build..
+
+S8:
+Let's introduce the most important objects and terms of CodeBuild
+A project is the main object in CodeBuild, it's where you define your project type and settings
+
+Provider:
+the source provider, which can be CodeBuild, Github, Bitbucket, S3 
+
+Environment Image
+the image of the build server which will be launched during build
+
+Buildspec file
+The main build configuration file for your project, stores build commands in a YAML-formatted buildspec file
+
+Input Source
+The input source files from the defined provider for your build. You can also define multiple input sources
+
+Output artifact
+The result from the build, you can also define multiple output artifacts
+
+Environment variables
+AWS CodeBuild provides several environment variables that you can use in your build commands. 
+Also you can create your own variables
+
+Trigger
+You can create a trigger on a project to schedule a build once every hour, day, or week
+
+
+
+S9
+With CodeBuild you can build all kind of different software projects, let's have a look 
+on some of them. The ones highlighted with a start will be covered in hands on lessons
+
+You can build Java projects with maven or gradle. 
+
+You can build Javascript projects, for example nodeJS or other
+
+You can also build docker images
+
+You can create a static html website for a S3 bucket
+
+Of course Lambda, build your serverless application with CodeBuild
+
+You can also build a war file with maven and deploy it to Elastic Beanstalk
+
+you can mount and build on a Amazon EFS files system
+
+and you can also build .NET projects for Microsoft Windows server
+
+
+
+S10
+Finally an overview on this chapter:
+So you are already watching the Introduction and chapter overview
+In the next lessons let's have a look on the possible Providers for CodeBuild
+Then let's create our First CodeBuild project
+The next lesson is showing a Docker example project
+We have a lesson about Input sources and output artifacts
+In another hands on lesson let's create Static website example project
+and let's continue to create a Lambda example project
+There is a lesson on how to Monitor CodeBuild
+and we going to talk about Env variables
+Finally a short Summary
+
+
+
+
+
+

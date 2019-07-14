@@ -1,0 +1,148 @@
+
+S1
+Hello CloudGurus,
+welcome to this introduction the my course on AWS DevOps CI/CD Tooling
+
+S2
+Let's make you a real AWS DevOps Guru.
+
+S3
+The content of this short video is 
+a course overview
+a short introduction on CodeCommit
+CodeBuild
+and 
+CodeDeploy and CodePipeline
+Finally a shot summary and the big picture
+
+S4
+Here is the course overview
+The first chapter is about CodeCommit
+A version control service hosted by Amazon Web Services that you can use to privately store and 
+manage files, such as documents, source code, and binary files in the cloud
+
+The second chapter covers CodeBuild, which is a
+A fully managed continuous integration service that compiles source code, runs tests, 
+and produces software packages that are ready to deploy
+
+and in the next chapter we going to cover both CodeBuild and CodePipeline
+CodeBuild is 
+a fully managed deployment service that automates software deployments to a variety of 
+compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your on-premises servers
+and finally CodePipeline, the service to bring them all together.
+a fully managed continuous delivery service that helps you automate your release pipelines 
+for fast and reliable application and infrastructure updates
+
+S5
+One sentence on each service we going to cover in it's own chapter, starting with
+CodeCommit
+With CodeCommit you canstore and manage assets (such as documents, source code, and binary files) 
+in a private GIT based repository on AWS
+
+S6
+This is the content of the CodeCommit chapter
+Introduction and chapter overview
+Create first CodeCommit Repo
+Browse files in Repo
+Integration with Eclipse and VisualStudio
+Triggers and webhooks
+Branches
+Pull requests
+Summary
+
+S7
+The next chapter will focus on CodeBuild
+CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy. 
+The build can be maven, gradle, docker or others
+
+S8
+the content of this chapter is:
+Introduction and chapter overview
+Providers
+First CodeBuild project
+Docker example project
+Input sources and output artifacts
+Static website example project
+Lambda example project
+Monitoring codebuild
+Env variables
+Summary
+
+
+S9
+We will finally talk about CodeDeploy and CodePipeline in the last chapter, focusing on these 2 services
+CodeDeploy
+deploys your code to Amazon EC2 instances, on-premises instances, 
+serverless Lambda functions, or Amazon ECS services.
+
+S10
+whereas CodePipeline
+models, visualizes, and automates the steps required to release your software
+
+S11
+the content of this chapter is :
+Introduction and chapter overview
+First pipeline with CodeCommit repo
+Create ECS deploy pipeline
+Create a pipeline with cloud formation
+Create android app pipeline
+Stages
+Cloudwatch events, webhooks and change triggers
+Summary
+
+S12
+Finally the big picture
+We have the 3 AWS services 
+CodeCommit, CodeBuild, CodeDeploy which can represent on stage in a CodePipeline ( source , build , deploy)
+
+S13
+And this is exactly the idea of CodePipeline which
+Manages the complete build pipeline from source over build to deployment
+models, visualizes, and automates the steps required to release your software
+
+S14
+So far an overview about the course content and now let's get started 
+with the first chapter about CodeCommit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+S12
+First lesson is a an Introduction and chapter overview
+
+In the first HandsOn lession we Create our first CodeCommit Repo
+
+Then lets have a look on how to Browse files in Repo
+
+In a handsOn lesson lets see how to Integration with Eclipse and VisualStudio
+
+The next lesson will introduce Triggers and webhooks with handsOn examples
+
+Next we gonna have a look on Branches in CodeCommit
+
+And once you know how to create Branches, we going to cover Pull requests
+
+and finally a short Summary of the CodeCommit chapter
+
+
+
+
+
+
+
+
+ 
