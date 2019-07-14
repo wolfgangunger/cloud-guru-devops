@@ -91,7 +91,7 @@ Your user credentials to authenticate against CodeCommit. Can be HTTPS or SSH
 S12
 You are aleady watching the First lesson, an Introduction and chapter overview
 
-In the first HandsOn lession we Create our first CodeCommit Repo
+In the first HandsOn lession we Create our first CodeCommit Repo and see how to authenticate against CodeCommit
 
 Then lets have a look on how to Browse files in Repo
 
