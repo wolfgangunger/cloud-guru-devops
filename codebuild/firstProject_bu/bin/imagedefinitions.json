@@ -1,0 +1,6 @@
+[
+    {
+        "name": "spring-boot",
+        "imageUri": "016973021151.dkr.ecr.us-west-1.amazonaws.com/ecs-example-repository:spring-boot"
+    }
+]

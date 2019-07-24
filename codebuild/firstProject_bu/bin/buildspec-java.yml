@@ -1,0 +1,50 @@
+version: 0.2
+# wolfgang unger 4.2018 - code project with java image - install docker 
+phases:
+  install:
+    commands:
+     # variables
+      - REPOSITORY_URI=016973021151.dkr.ecr.eu-west-3.amazonaws.com/ecs-repository  
+      - ARTIFACT=spring-boot
+      - ARTIFACT_TYPE=.jar 
+      - TAG_NAME=$REPOSITORY_URI:$ARTIFACT
+      - echo $AWS_DEFAULT_REGION 
+      - echo $ARTIFACT
+      - echo $ARTIFACT_TYPE
+      - echo $REPOSITORY_URI
+      - echo $TAG_NAME  
+      # installation
+      - apt-get update -y
+      - apt-get install -y software-properties-common
+      - add-apt-repository ppa:openjdk-r/ppa
+      - apt-get update -y
+      - apt-get install -y openjdk-8-jdk
+      - apt-get install -y maven
+      - apt-get install -y gradle
+  pre_build:
+    commands:
+
+  build:
+    commands:
+      #- echo Maven Build ...
+      #- mvn package
+      - echo Gradle Build
+      - chmod +x gradlew
+      - ./gradlew build
+      
+      - echo Building the Docker image...  
+      - docker build -f src/main/docker/Dockerfile -t $TAG_NAME .
+      - docker tag $TAG_NAME $TAG_NAME
+  post_build:
+    commands:
+      #- docker tag $REPOSITORY_URI:$ARTIFACT $REPOSITORY_URI:$$ARTIFACT
+       #- $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+       - $(aws ecr get-login --region eu-west-3 --no-include-email) 
+       - echo Build completed on `date`
+       - echo Pushing the Docker images...
+       - docker push $TAG_NAME
+       - aws ecs list-services --cluster UngerwECS
+       - aws ecs update-service --cluster UngerwECS --service SpringBootService-Service-9ZIIC01SVR0G --task-definition UngerwSpringBootTD
+       
+artifacts:
+     files:  target/spring-boot.jar
