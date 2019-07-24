@@ -11,9 +11,6 @@ phases:
       - apt-get install -y openjdk-8-jdk
       - apt-get install -y maven
 
-  pre_build:
-    commands:
-
   build:
     commands:
       - echo Maven Build ...
