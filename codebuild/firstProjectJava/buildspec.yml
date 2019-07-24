@@ -2,18 +2,13 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      # installation
-      - apt-get update -y
-      - apt-get install -y software-properties-common
-      - add-apt-repository ppa:openjdk-r/ppa
-      - apt-get update -y
-      - apt-get install -y openjdk-8-jdk
-      - apt-get install -y maven
+    runtime-versions:
+      java: openjdk8
 
   build:
     commands:
       - echo Maven Build ...
+      - java -version
       - mvn clean package
 
        
