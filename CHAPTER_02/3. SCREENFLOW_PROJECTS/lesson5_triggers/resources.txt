@@ -1,5 +1,0 @@
-notifications & triggers
-https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-repository-email.html
-
-webhook example:
-https://docs.gearset.com/en/articles/2069379-getting-started-with-aws-codecommit-webhooks
