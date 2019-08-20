@@ -1,0 +1,10 @@
+version: 0.0
+Resources:
+  - CodeDeployLambda:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: "CodeDeployLambda"
+        Alias: "CDVersion"
+        CurrentVersion: "1"
+        TargetVersion: "2"
+
